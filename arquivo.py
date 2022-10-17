@@ -28,9 +28,14 @@ def validacao(login, senha, nome='registro.txt'):
 
 def deletar(login, senha, nome='registro.txt'):
     ret = f'{login};{senha}\n'
+    print(f'ret - {ret}')
 
     a = open(nome, 'r')
-    lido = a.readlines()
-    lido.pop(lido.index(ret))
+    linhas = a.readlines()
+    linhas.pop(linhas.index(ret))
     a.close
+
+    a = open(nome, 'w')
+    a.writelines(linhas)
+    a.close()
 
