@@ -1,0 +1,44 @@
+Tela com login
+  login e senha e escolha do hotel (sem cadastro) -> login = apto/senha = digitos do CPF
+
+Home Pag - Exibir Nome + Inf cadastro
+  Sobre nós, contatos, logOut, Status
+  
+  Solicitação de serviços
+    Recepção, Manutenção, Serviços Gerais e copa
+  Reclamações
+    Recepção, Manutenção, Serviços Gerais, copa e outros
+   
+   //Ao clicar em qualquer um vai mandar para Registro
+   
+    Registro -
+      Tipo de atendimento (Ja inputada - Solicitação ou Reclamação)
+      Setor (ja imputada - Recepção, Manutenção, Serviços Gerais, copa e outros)
+      Hotel (Ja inputada no cadastro)
+      Apto (Ja inputado no cadastro)
+      Descrição - (um input na hora para descrever a solicitaçao)
+      + Botão salvar + Botão voltar
+      
+      (Ao Clicar em salvar mostrar uma msg de confirmação de que o registro foi realizado - "Sua SOLICITAÇÃO foi registrada!\nO numero do protocolo é {nProtocolo}\nPara consulta
+      clique em status no menu) / Após delay de 3 segs, voltar para Homepage
+      
+      Ao clicar em salvar criar um protocolo (def protocolo()) que vai ser dia/mes/ano/numerorandomcom4digitos - Salvar isso em um dicionario registro
+      registro = {protocolo:'', tipoAtendimento:'', Setor:'', Hotel:'', Apto:'', Descrição:''}
+     
+     Sobre nós - 
+      'Estamos presentes em Maceio/AL desde 1991. Nossos hoteis ficam em localizações estrategicas para voce se sentir perto de tudo que precisar.'
+     
+     Contatos - 
+      Chambres Hotel - Pegar dados no chambreshoteis.com.br
+     
+     LogOut - 
+      Voltar para tela de login
+    
+   
+
+    Status - 
+      Tabela com data de registro
+        categoria de atendimento (Serviço ou reclamações) Area, Status de andamento e uma opção para ampliar + botão voltar
+      Ampliado 
+        Numero de protocolo, data de registro, atendimento, área, Status da solicitação feita e resposta do hotel + Botão para feedback + botão voltar
+
