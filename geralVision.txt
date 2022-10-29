@@ -46,5 +46,5 @@ Home Pag - Exibir Nome + Inf cadastro
 
 
     Botão voltar - 
-      Uma def que apagará a tela e voltará para o menu principal
+      Uma def que apagará a tela e voltará para o menu principal!
 
