@@ -1,15 +1,25 @@
 def gerarProtocolo():
     import datetime
     from random import randint
-    
+
     dia = datetime.date.today().day
     mes = datetime.date.today().month
     ano = datetime.date.today().year
 
-    numero = randint(1000, 9999)
-    protocol = f'{dia}{mes}{ano}{numero}'
+    while True:
+        numero = randint(1000, 9999)
+        protocol = f'{dia}{mes}{ano}{numero}'
+        if not verificar(protocol):
+            return protocol
 
-    return protocol
+def verificar(protocolo, nomeArq = 'registro.txt'):
+    if arquivo_existe():
+        a = open(nomeArq, 'r')
+        nProtocol = a.readlines()
+        for i in range(len(nProtocol)):
+            if protocolo in nProtocol[i].split(','):
+                return True
+        return False
 
 def confirmacao(tipoAtendimento, protocolo):
     print(f'Sua {tipoAtendimento} foi registrada!\nO numero do protocolo é {protocolo}\nPara consulta clique em status no menu!')
@@ -45,5 +55,5 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
 
 
 #main
-descricao = 'Mofo na parede'
+descricao = 'tetse'
 salvarRegistro(gerarProtocolo(), 'Reclamação', 'copa', 'San patrick', 702, descricao)
