@@ -46,7 +46,7 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
     registro = [protocolo, tipoAtendimento, setor, hotel, apto, descricao]
 
     arquivo = open(nomeArquivo, 'a')
-    arquivo.write(f'Protocolo: {protocolo}, Tipo Atendimento: {tipoAtendimento}, Setor: {setor}, Hotel: {hotel}, Apto: {apto}, Descriçaõ: {descricao}\n')
+    arquivo.write(f'{protocolo}, {tipoAtendimento}, {setor}, {hotel}, {apto}, {descricao}\n')
     arquivo.close()
 
     confirmacao(tipoAtendimento, protocolo)
@@ -55,5 +55,5 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
 
 
 #main
-descricao = 'tetse'
-salvarRegistro(gerarProtocolo(), 'Reclamação', 'copa', 'San patrick', 702, descricao)
+descricao = 'faça muito ou faça pouco, mas faça algo!'
+#salvarRegistro(gerarProtocolo(), 'Reclamação', 'copa', 'San patrick', 702, descricao)
