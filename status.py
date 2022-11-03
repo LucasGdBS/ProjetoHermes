@@ -33,10 +33,7 @@ def ampliar():
                 print(f'Tipo de atendimento: {listas[i][1]}')
                 print(f'Setor: {listas[i][2]}')
                 print(f'Status de andamento: Em analise')
-                print(f'Descrição: {listas[i][5:len(listas[i])]}')
-            else:
-                print('Nenhuma solicitação com esse número encontrado')
-                return 0
+                print(f'Descrição: {listas[i][5]}')
     except TypeError:
         print('Nenhuma solicitação com esse número encontrado')
 

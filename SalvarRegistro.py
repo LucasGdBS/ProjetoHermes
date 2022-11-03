@@ -42,8 +42,6 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
     
     if not arquivo_existe():
         criar_arquivo()
-    
-    registro = [protocolo, tipoAtendimento, setor, hotel, apto, descricao]
 
     arquivo = open(nomeArquivo, 'a')
     arquivo.write(f'{protocolo}, {tipoAtendimento}, {setor}, {hotel}, {apto}, {descricao}\n')
@@ -55,5 +53,5 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
 
 
 #main
-descricao = 'faça muito ou faça pouco, mas faça algo!'
+descricao = 'faça muito ou faça pouco mas faça algo!'
 #salvarRegistro(gerarProtocolo(), 'Reclamação', 'copa', 'San patrick', 702, descricao)
