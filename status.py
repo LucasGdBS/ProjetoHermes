@@ -34,6 +34,7 @@ def ampliar():
                 print(f'Setor: {listas[i][2]}')
                 print(f'Status de andamento: Em analise')
                 print(f'Descrição: {listas[i][5]}')
+                return True
     except TypeError:
         print('Nenhuma solicitação com esse número encontrado')
 
@@ -43,8 +44,10 @@ def tabular(cabecalho = ['Número', 'Protocolo', 'Categoria', 'Setor', 'Hotel', 
 
 def status():
     tabular()
-    ampliar()
-    op = input('[1]Feedback\t[2]Voltar')
+    if ampliar():
+        op = int(input('[1]Voltar\t[2]FeedBack'))
+    else:
+        op = int(input('[1]Voltar'))
 
     return op
 

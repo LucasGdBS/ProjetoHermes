@@ -50,3 +50,12 @@ def registro(tipoAtendimento, setor, hotel, apto): # Função para a tela de reg
 
     return descricao
 
+def feedBack(): # Tela para feedBack
+    nota = int(input('Digite uma nota de 0 a 5: '))
+    if nota >= 4:
+        print('Ficamos felizes em saber que conseguimos atender suas expectativas!')
+    else:
+        print('Sentimos muito... esperamos poder melhorar e lhe atender melhor')
+
+
+
