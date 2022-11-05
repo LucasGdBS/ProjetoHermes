@@ -17,7 +17,7 @@ def verificar(protocolo, nomeArq = 'registro.txt'):
         a = open(nomeArq, 'r')
         nProtocol = a.readlines()
         for i in range(len(nProtocol)):
-            if protocolo in nProtocol[i].split(','):
+            if protocolo in nProtocol[i].split(';'):
                 return True
         return False
 
@@ -44,7 +44,7 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
         criar_arquivo()
 
     arquivo = open(nomeArquivo, 'a')
-    arquivo.write(f'{protocolo}, {tipoAtendimento}, {setor}, {hotel}, {apto}, {descricao}\n')
+    arquivo.write(f'{protocolo}; {tipoAtendimento}; {setor}; {hotel}; {apto}; {descricao}\n')
     arquivo.close()
 
     confirmacao(tipoAtendimento, protocolo)
@@ -53,5 +53,5 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
 
 
 #main
-descricao = 'faça muito ou faça pouco mas faça algo!'
+descricao = 'faça muito ou, faça pouco mas faça algo!'
 #salvarRegistro(gerarProtocolo(), 'Reclamação', 'copa', 'San patrick', 702, descricao)

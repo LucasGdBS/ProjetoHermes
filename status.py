@@ -12,7 +12,7 @@ def lerArquivo(nomeArquivo = 'registro.txt'):
         a = open(nomeArquivo, 'r')
         linhas = a.readlines()
         for i in range(len(linhas)):
-            listas.append(linhas[i].split(', '))
+            listas.append(linhas[i].split('; '))
         for i in range(len(listas)):
             table.append([str(i+1), listas[i][0], listas[i][1], listas[i][2], listas[i][3], 'Em analise'])
             # str(i+1) Numero
@@ -44,6 +44,9 @@ def tabular(cabecalho = ['Número', 'Protocolo', 'Categoria', 'Setor', 'Hotel', 
 def status():
     tabular()
     ampliar()
+    op = input('[1]Feedback\t[2]Voltar')
+
+    return op
 
 status()
 

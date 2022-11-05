@@ -54,6 +54,7 @@ def menu_reclamacao(op3):  # Função do Menu Reclamações
 
 
 # Programa Principal
+'''
 op_menu = 0
 while (op_menu != 3):
     chambres()
@@ -119,3 +120,4 @@ while (op_menu != 3):
         print("Opção Inválida !")
 
     op_menu = 0
+'''
