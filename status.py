@@ -45,9 +45,9 @@ def ampliar():
             return False
 
 
-def tabular(cabecalho = ['Número', 'Protocolo', 'Categoria', 'Setor', 'Hotel', 'Status de andamento'], tabela = lerArquivo()):
+def tabular(cabecalho = ['Número', 'Protocolo', 'Categoria', 'Setor', 'Hotel', 'Status de andamento']):
     cabecalho = ['Número', 'Protocolo', 'Categoria', 'Setor', 'Hotel', 'Status de andamento']
-    print(tabulate(tabela, headers=cabecalho, tablefmt='fancy_grid'))
+    print(tabulate(lerArquivo(), headers=cabecalho, tablefmt='fancy_grid'))
 
 def status():
     chambres()

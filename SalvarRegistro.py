@@ -49,5 +49,5 @@ def salvarRegistro(protocolo, tipoAtendimento, setor, hotel, apto, descricao, no
     arquivo.close()
 
     confirmacao(tipoAtendimento, protocolo)
-    sleep(5)
+    sleep(4)
     return 0

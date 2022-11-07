@@ -12,14 +12,14 @@ def inicio():
 
 def mainMenu(hotelEscolhido):
     while True:
-        op = menu_main('Carol', 702, hotelEscolhido)
+        op = menu_main('Usuario', 111, hotelEscolhido)
         if op == 1:
             setor = menu_servico()
             tipoAtendimento = 'Serviços'
             break
         elif op == 2:
             setor = menu_reclamacao()
-            tipoAtendimento = 'FeedBacks'
+            tipoAtendimento = 'Opinião'
             break
         elif op == 3:
             op = status()
@@ -41,11 +41,11 @@ def mainMenu(hotelEscolhido):
             print('Opção inválida, tente novamente')
             sleep(2)
     
-    descricao = registro(tipoAtendimento, setor, hotelEscolhido, 702)
+    descricao = registro(tipoAtendimento, setor, hotelEscolhido, 111)
     if descricao == 'voltar':
         mainMenu(hotelEscolhido)
     else:
-        salvarRegistro(gerarProtocolo(), tipoAtendimento, setor, hotelEscolhido, 702, descricao)
+        salvarRegistro(gerarProtocolo(), tipoAtendimento, setor, hotelEscolhido, 111, descricao)
         mainMenu(hotelEscolhido)
 
 inicio()
