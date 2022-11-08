@@ -1,9 +1,9 @@
-#Importar os modulos aqui!
+#Importar os módulos aqui!
 from SalvarRegistro import *
 from status import *
 from telas import *
 
-# Escrever codigo aqui!
+# Escrever código aqui!
 def inicio():
     chambres()
     hotel = escolhaHotel() #Seleção do hotel
@@ -38,11 +38,11 @@ def mainMenu(hotelEscolhido):
         elif op == 6:
             inicio()
         else:
-            print('Opção inválida, tente novamente')
+            print('Opção inválida, tente novamente!')
             sleep(2)
     
     descricao = registro(tipoAtendimento, setor, hotelEscolhido, 111)
-    if descricao == 'voltar':
+    if descricao == 'Voltar':
         mainMenu(hotelEscolhido)
     else:
         salvarRegistro(gerarProtocolo(), tipoAtendimento, setor, hotelEscolhido, 111, descricao)

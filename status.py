@@ -16,7 +16,7 @@ def lerArquivo(nomeArquivo = 'registro.txt'):
         for i in range(len(linhas)):
             listas.append(linhas[i].split('; '))
         for i in range(len(listas)):
-            table.append([str(i+1), listas[i][0], listas[i][1], listas[i][2], listas[i][3], 'Em analise'])
+            table.append([str(i+1), listas[i][0], listas[i][1], listas[i][2], listas[i][3], 'Em análise'])
             # str(i+1) Numero
             # listas[i][0] Protocolo
             # listas[i][1] Categoria
@@ -26,21 +26,21 @@ def lerArquivo(nomeArquivo = 'registro.txt'):
 
 def ampliar():
     while True:
-        op = input('Digite o número da solicitação que deseja ampliar [-1] para voltar: ')
+        op = input('Digite o número da solicitação que deseja visualizar. Digite [-1] para Voltar: ')
         if op != '-1':
             lista = lerArquivo()
             try:
                 for i in range(len(lista)):
                     if op in lista[i]:
                         chambres()
-                        print(f'Numero de Protocolo: {listas[i][0]}')
+                        print(f'Número de Protocolo: {listas[i][0]}')
                         print(f'Tipo de atendimento: {listas[i][1]}')
                         print(f'Setor: {listas[i][2]}')
-                        print(f'Status de andamento: Em analise')
+                        print(f'Status de andamento: Em análise')
                         print(f'Descrição: {listas[i][5]}')
                         return True
             except:
-                print('Nenhuma solicitação com esse número encontrado')
+                print('Não há registro com este número de protocolo.')
         else:
             return False
 
