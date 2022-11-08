@@ -10,3 +10,7 @@ Design - Rodrigo Fialho, Camila Chagas, Myscka
 Para utilizar o projeto é necessario ter as seguintes bibliotecas:
 
 Random, Time, Tabulate, DateTime, Os
+
+Link para instalação da bilbioteca Tabulate: <https://pypi.org/project/tabulate/>
+
+Demonstração Hermes: <https://drive.google.com/file/d/1k2jhWntPG8Jh3sn2K3lJ5lyPxfWyGJJu/view?usp=share_link>

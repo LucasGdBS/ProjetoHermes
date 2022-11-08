@@ -1,4 +1,4 @@
-def gerarProtocolo(): #Função para gerar um numero de protocolo
+def gerarProtocolo(): #Função para gerar um número de protocolo
     import datetime
     from random import randint
 
@@ -12,7 +12,7 @@ def gerarProtocolo(): #Função para gerar um numero de protocolo
         if not verificarProt(protocol):
             return protocol
 
-def verificarProt(protocolo, nomeArq = 'registro.txt'): #Função que verifica se o protocolo ja existe
+def verificarProt(protocolo, nomeArq = 'registro.txt'): #Função que verifica se o protocolo já existe
     if arquivo_existe():
         a = open(nomeArq, 'r')
         nProtocol = a.readlines()
@@ -22,8 +22,8 @@ def verificarProt(protocolo, nomeArq = 'registro.txt'): #Função que verifica s
                 return True
         return False
 
-def confirmacao(tipoAtendimento, protocolo): #Função que mostra a mensagem dizendo que o atendimento foi registrado
-    print(f'Sua {tipoAtendimento} foi registrada!\nO numero do protocolo é {protocolo}\nPara consulta clique em status no menu!')
+def confirmacao(tipoAtendimento, protocolo): #Função que mostra o aviso do registro do atendimento
+    print(f'Sua {tipoAtendimento} foi registrada!\nO número do protocolo é {protocolo}.\nPara consultar, clique em Status no Menu Principal!')
 
 def arquivo_existe(nome='registro.txt'): # Função para verificar se o arquivo já existe
     try:

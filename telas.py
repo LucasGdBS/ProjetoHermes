@@ -18,31 +18,31 @@ def menu_main(nome, apto, hotel):  # Função do Menu Principal
     print("Menu Principal : \n")
     print(f'{nome}\n{hotel}\napto: {apto}\n')
     op_menu_main = int(
-        input(" 1 - Solicitar Serviços \n 2 - Nos dê sua opinião \n 3 - Andamendo de solicitação \n 4 - Sobre nós \n 5 - Contatos \n 6 - Sair \n\nEm que podemos te ajudar? "))
+        input(" 1 - Solicitar Serviços \n 2 - Dê a sua opinião \n 3 - Status de Atendimento \n 4 - Sobre nós \n 5 - Contatos \n 6 - Sair \n\nComo podemos te ajudar? "))
     
     return op_menu_main
 
 
 def menu_servico():  # Função do Menu Serviços
     chambres()
-    opcoes = {1:'Recepção', 2:'Manutenção', 3:'Serviçoes Gerais', 4:'Copa', 5:'Voltar'}
+    opcoes = {1:'Recepção', 2:'Manutenção', 3:'Serviços Gerais', 4:'Copa', 5:'Voltar'}
 
     print("Menu Serviços \n")
     op_menu_serv = int(input(
-        " 1 - Recepção\n 2 - Manutenção\n 3 - Serviços Gerais\n 4 - Copa\n 5 - Voltar \n\nCom qual setor voccê quer se conectar? "))
+        " 1 - Recepção\n 2 - Manutenção\n 3 - Serviços Gerais\n 4 - Copa\n 5 - Voltar \n\nCom qual setor você deseja conectar? "))
     op_menu_serv = opcoes[op_menu_serv]
 
-    # opcao 1 - colocar outra funcao para acessar (if) cada opção
+    # opcao 1 - colocar outra função para acessar (if) cada opção
     return op_menu_serv
 
 
 def menu_reclamacao():  # Função do Menu Reclamações
     chambres()
-    opcoes = {1:'Recepção', 2:'Manutenção', 3:'Serviçoes Gerais', 4:'Copa', 5:'Voltar'}
+    opcoes = {1:'Recepção', 2:'Manutenção', 3:'Serviços Gerais', 4:'Copa', 5:'Voltar'}
 
     print("Menu Opinião\n")
     op_menu_recl = int(input(
-        " 1 - Recepção\n 2 - Manutenção\n 3 - Serviços Gerais\n 4 - Copa\n 5 - Voltar \n\nCom qual setor você quer se conectar? "))
+        " 1 - Recepção\n 2 - Manutenção\n 3 - Serviços Gerais\n 4 - Copa\n 5 - Voltar \n\nCom qual setor você deseja conectar? "))
     
     op_menu_recl = opcoes[op_menu_recl]    
 
@@ -55,33 +55,33 @@ def registro(tipoAtendimento, setor, hotel, apto): # Função para a tela de reg
     print(f'Setor: {setor}\n')
     print(f'Hotel: {hotel}\n')
     print(f'Apto: {apto}\n')
-    descricao = input('Me fala mais um pouco para que nossa equipe te atenda com excelência: ')
+    descricao = input('Como nossa equipe pode atendê-lo : ')
     op = int(input(f'[1] Salvar {tipoAtendimento}\t[2] Voltar '))
     
     if op == 1:
         return descricao
     else:
-        descricao = 'voltar'
+        descricao = 'Voltar'
         return descricao
 
 def feedBack(): # Tela para feedBack
-    nota = int(input('Nos dê uma nota de 1 à 5, sendo 1 - Não gostei do atendimento e 5 - Adorei o atendimento: '))
+    nota = int(input('Avalie o nosso serviço com uma nota de 1 à 5, sendo 1 - Não gostei do atendimento e 5 - Adorei o atendimento: '))
     if nota >= 4:
-        print('Ficamos felizes em saber que conseguimos atender suas expectativas!')
+        print('Estamos muito feliz em saber que atendemos as suas expectativas!')
     else:
-        print('Sentimos muito... esperamos poder melhorar e lhe atender melhor')
+        print('Sentimos muito em não termos atendido as suas expectativas. Iremos analisar o problema para melhor atendê-lo.')
     sleep(4)
 
 def telaLogin():
     while True:
         chambres()
-        login = input('Digite seu apartamento: ')
-        senha = input('Digite sua senha: ')
+        login = input('Digite o n° do seu apartamento: ')
+        senha = input('Digite a sua senha: ')
 
         if f'{login};{senha}' == f'admin;admin':
             return True
         else:
-            print('login invalido, tente novamente')
+            print('login inválido, tente novamente')
             sleep(1)
 
 def escolhaHotel():
@@ -98,7 +98,7 @@ def escolhaHotel():
             hotel = 'Pousada Nossa Casa'
             return hotel
         else:
-            print('Opção não valida, tente novamente')
+            print('Opção inválida, tente novamente')
             sleep(1)
 
 def tela_contatos():
@@ -109,9 +109,9 @@ def tela_contatos():
 
 def tela_sobre_nos():
     chambres() 
-    print("\nNossa missão é conectar pessoas a experiências\nincríveis, criar laços e promover o bem-estar.")
-    print("\nSomos aquilo que amamos, viagem, conforto e hospitalidade")
-    print("\nEstamos presentes em Maceio/AL desde 1991.\nNossos hoteis ficam em localizações estrategicas\npara voce se sentir perto de tudo que precisar.\n")
+    print("\nNossa missão é conectar pessoas a experiência\nincríveis, criar laços e promover o bem-estar.")
+    print("\nSomos aquilo que amamos, viagem, conforto e hospitalidade.")
+    print("\nEstamos presentes em Maceió/AL desde 1991.\nNossos hoteis estão em localizações estrategicas\npara você se sentir perto de tudo que precisar.\n")
     op = int(input('1 - Voltar: '))
     return op
 
