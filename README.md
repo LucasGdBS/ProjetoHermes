@@ -1,11 +1,11 @@
 # ProjetoHermes
-**Projeto Hermes** - um projeto do 1º periodo da CESAR School que visa facilitar a comunicação entre hospedes e gestores de hotel.
+**Projeto Hermes** - um projeto do 1º período da CESAR School que visa facilitar a comunicação entre hóspedes e gestores de hotel.
 
 Versão do pyton: 3.10.7
 
 VSCode utilizado para edição do código
 
-Para utilizar o projeto é necessario ter as seguintes bibliotecas:
+Para utilizar o projeto é necessário ter as seguintes bibliotecas:
 
 Random, Time, Tabulate, DateTime, Os
 
@@ -15,6 +15,6 @@ Demonstração Hermes: <https://drive.google.com/file/d/1obEnH0a5-JnEFZd3rSrb-r5
 
 # Equipe de projeto:
 
-Ciencia da computação: **Lucas Gabriel, Yara Rodrigues, Adriana Lucia, Mell Bryner, Henrique Roma, João Pedro Batista**
+Ciência da computação: **Lucas Gabriel, Yara Rodrigues, Adriana Lucia, Mell Bryner, Henrique Roma, João Pedro Batista**
 
 Design - **Rodrigo Fialho, Camila Chagas, Myckel Vitor**
