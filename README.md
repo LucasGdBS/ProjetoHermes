@@ -1,5 +1,5 @@
 # ProjetoHermes
-**Projeto Hermes** - um projeto do 1º periodo da Cesar shcool que visa facilitar a comunicação entre hospedes e gestores de hotel.
+**Projeto Hermes** - um projeto do 1º periodo da CESAR School que visa facilitar a comunicação entre hospedes e gestores de hotel.
 
 Versão do pyton: 3.10.7
 
