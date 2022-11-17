@@ -13,6 +13,8 @@ Link para instalação da bilbioteca **Tabulate**: <https://pypi.org/project/tab
 
 Demonstração Hermes: <https://drive.google.com/file/d/1obEnH0a5-JnEFZd3rSrb-r5a0upB65YV/view?usp=share_link>
 
+*OBS: o login (apto) e a senha são, respectivamente: admin, admin*
+
 # Equipe de projeto:
 
 Ciência da computação: **Lucas Gabriel, Yara Rodrigues, Adriana Lucia, Mell Bryner, Henrique Roma, João Pedro Batista**
