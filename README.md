@@ -17,4 +17,4 @@ Demonstração Hermes: <https://drive.google.com/file/d/1obEnH0a5-JnEFZd3rSrb-r5
 
 Ciencia da computação: **Lucas Gabriel, Yara Rodrigues, Adriana Lucia, Mell Bryner, Henrique Roma, João Pedro Batista**
 
-Design - **Rodrigo Fialho, Camila Chagas, Myscka**
+Design - **Rodrigo Fialho, Camila Chagas, Myckel Vitor**
