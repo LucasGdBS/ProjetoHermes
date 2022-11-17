@@ -12,7 +12,7 @@ def inicio():
 
 def mainMenu(hotelEscolhido):
     while True:
-        op = menu_main('Usuario', 111, hotelEscolhido)
+        op = menu_main('Usuário', 111, hotelEscolhido)
         if op == 1:
             setor = menu_servico()
             tipoAtendimento = 'Serviços'
