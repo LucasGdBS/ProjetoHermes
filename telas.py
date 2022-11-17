@@ -30,9 +30,14 @@ def menu_servico():  # Função do Menu Serviços
     print("Menu Serviços \n")
     op_menu_serv = int(input(
         " 1 - Recepção\n 2 - Manutenção\n 3 - Serviços Gerais\n 4 - Copa\n 5 - Voltar \n\nCom qual setor você deseja conectar? "))
-    op_menu_serv = opcoes[op_menu_serv]
 
-    # opcao 1 - colocar outra função para acessar (if) cada opção
+    if op_menu_serv > 5:
+        print('Opção invalida')
+        op_menu_serv = 5
+        sleep(2)
+    
+    op_menu_serv = opcoes[op_menu_serv]
+    
     return op_menu_serv
 
 
@@ -43,6 +48,11 @@ def menu_reclamacao():  # Função do Menu Reclamações
     print("Menu Opinião\n")
     op_menu_recl = int(input(
         " 1 - Recepção\n 2 - Manutenção\n 3 - Serviços Gerais\n 4 - Copa\n 5 - Voltar \n\nCom qual setor você deseja conectar? "))
+    
+    if op_menu_recl > 5:
+        print('Opção invalida')
+        op_menu_recl = 5
+        sleep(2)
     
     op_menu_recl = opcoes[op_menu_recl]    
 

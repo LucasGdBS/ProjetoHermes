@@ -16,10 +16,14 @@ def mainMenu(hotelEscolhido):
         if op == 1:
             setor = menu_servico()
             tipoAtendimento = 'Serviços'
+            if setor == 'Voltar':
+                mainMenu(hotelEscolhido)
             break
         elif op == 2:
             setor = menu_reclamacao()
             tipoAtendimento = 'Opinião'
+            if setor == 'Voltar':
+                mainMenu(hotelEscolhido)
             break
         elif op == 3:
             op = status()
